@@ -11,11 +11,6 @@ export const FavoriteMovie = ({
     favoriteMoviesList.includes(m._id)
   );
 
-  function removeMovie(movieId) {
-    const newFavoriteMovies = favoriteMovies.filter((m) => m._id !== movieId);
-    handleFavoriteMovieChange(newFavoriteMovies);
-  }
-
   return (
     <ListGroup>
       {favoriteMovies.map((m) => (
